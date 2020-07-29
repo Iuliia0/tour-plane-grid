@@ -1,0 +1,147 @@
+.packages
+  padding-top: 40px
+  padding-bottom: 70px
+  &-wrapper
+    display: grid
+    grid-template: 70px 500px 500px / 350px 350px 350px
+    max-width: 1110px
+    gap: 30px
+  &__titel
+    grid-column-start: span 3
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    color: $text-color
+    margin-top: 0
+  &__full
+    &-image
+      position: relative
+      grid-column-start: 1
+      grid-column-end: 2
+      min-height: 500px
+      width: 360px
+      overflow: hidden
+      border-radius: 8px 0 0 8px
+      &::before
+        content: 'Flash Offer'
+        z-index: 9
+        position: absolute
+        top: 26px
+        left: 0
+        font-style: normal
+        font-weight: 600
+        font-size: 8px
+        line-height: 10px
+        padding: 4px 9px
+        color: $light
+        background-color: $primary
+        border-radius: 0 4px 4px 0
+    &-photo
+      min-height: 500px
+      width: 366px
+    &-info
+      grid-gap: 0px;
+      min-height: 500px
+      min-width: 364px
+      padding: 46px 21px 35px 43px
+      background-color: $dark
+      color: $light
+      border-radius: 0 8px 8px 0
+      margin-left: -20px;
+    &-titel
+      grid-area: title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin-top: 5px
+      margin-bottom: 27px
+    &-text
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 22px
+      margin-bottom: 34px
+      margin-top: 0
+  &__compact
+    display: grid
+    position: relative
+    grid-template: 250px / 1fr
+    grid-template-areas: "photo photo" "title title" "text text" "text text" "price-old price-old" "price-new button"
+    min-height: 500px
+    width: 350px
+    background-color: $dark
+    color: $light
+    border-radius: 8px
+    overflow: hidden
+    
+    &::before
+      content: 'Flash Offer'
+      z-index: 9
+      position: absolute
+      top: 26px
+      left: 0
+      font-style: normal
+      font-weight: 600
+      font-size: 8px
+      line-height: 10px
+      padding: 4px 9px
+      color: $light
+      background-color: $primary
+      border-radius: 0 4px 4px 0
+    &--titel
+      margin-top: 30px
+  &__photo
+    grid-area: photo
+    object-fit: cover
+    height: 250px
+    width: 350px
+  &__info
+    padding-left: 32px
+  &__room
+    &-description
+      margin-left: 5px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+            
+    &-text
+      grid-area: text
+      margin-bottom: 5px
+      &:last-child
+        margin-bottom: 24px
+  &__price-old
+    grid-area: price-old
+    text-decoration: line-through
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    margin-bottom: 5px
+
+  &__price-new
+    grid-area: price-new
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+  &__book
+    grid-area: book
+    margin-left: 67px
+    grid-area: book
+    font-style: normal
+    font-size: 14px
+    line-height: 19px
+    border-radius: 4px
+    border: none
+    color: $light
+    background-color: $primary
+    padding: 11px 27px
+    text-decoration: none
+
+.stars-block
+  margin-bottom: 0
