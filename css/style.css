@@ -1056,6 +1056,10 @@ template {
   margin-top: 0;
 }
 
+.packages__full--price {
+  padding-top: 13px;
+}
+
 .packages__compact {
   display: grid;
   position: relative;
@@ -1087,6 +1091,7 @@ template {
 
 .packages__compact--titel {
   margin-top: 30px;
+  margin-bottom: 24px;
 }
 
 .packages__photo {
@@ -1100,6 +1105,10 @@ template {
   padding-left: 32px;
 }
 
+.packages__room {
+  margin-bottom: 24px;
+}
+
 .packages__room-description {
   margin-left: 5px;
   font-style: normal;
@@ -1111,10 +1120,6 @@ template {
 .packages__room-text {
   grid-area: text;
   margin-bottom: 5px;
-}
-
-.packages__room-text:last-child {
-  margin-bottom: 24px;
 }
 
 .packages__price-old {

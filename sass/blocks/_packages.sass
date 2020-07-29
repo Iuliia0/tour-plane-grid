@@ -66,6 +66,8 @@
       line-height: 22px
       margin-bottom: 34px
       margin-top: 0
+    &--price
+      padding-top: 13px
   &__compact
     display: grid
     position: relative
@@ -77,7 +79,6 @@
     color: $light
     border-radius: 8px
     overflow: hidden
-    
     &::before
       content: 'Flash Offer'
       z-index: 9
@@ -94,6 +95,7 @@
       border-radius: 0 4px 4px 0
     &--titel
       margin-top: 30px
+      margin-bottom: 24px
   &__photo
     grid-area: photo
     object-fit: cover
@@ -102,6 +104,7 @@
   &__info
     padding-left: 32px
   &__room
+    margin-bottom: 24px
     &-description
       margin-left: 5px
       font-style: normal
@@ -113,7 +116,6 @@
       grid-area: text
       margin-bottom: 5px
       &:last-child
-        margin-bottom: 24px
   &__price-old
     grid-area: price-old
     text-decoration: line-through
